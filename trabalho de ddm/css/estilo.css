@@ -1,0 +1,139 @@
+:root {
+    --cor_fundo: #ffffff;
+    --cor_fundo_container: #ffffff;
+    --cor_texto: #3d65d3;
+    --cor_h1: #2648b8b9;
+}
+
+body {
+    background-color: var(--cor_fundo);
+    font-size: 23px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; 
+}
+
+header {
+    background-color: var(--cor_fundo);
+    padding: 20px;
+    text-align: center;
+    color: var(--cor_texto);
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: outset 9px #2652ce;
+}
+
+.top-bar-top {
+    background-color: black;
+    padding: 25px;
+    color: var(--cor_texto);
+    display: flex;
+    justify-content: space-between;
+    border: inset 6px #2652ce;
+    flex-wrap: wrap; 
+}
+
+.h1-top {
+    color: var(--cor_texto);
+    font-size: 60px;
+    padding: 10px;
+    margin: 75px;
+    flex: 1 1 100%; 
+}
+
+.p-top {
+    text-align: center;
+    font-size: 25px;
+    padding: 90px;
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.texto {
+    color: var(--cor_h1);
+    font-size: 60px;
+    padding: 3px;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.top-img {
+    width: 100%;              
+    max-width: 700px;         
+    height: auto;             
+    padding: 50px;
+    display: block;           
+    margin-left: auto;       
+    margin-right: auto;      
+}
+
+.container {
+    border: outset 6px #2652ce;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    color: #000000;
+    font-size: 25px;
+    font-family: cursive;
+    border: inset 4px #2652ce;
+}
+
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        font-size: 18px;
+    }
+
+    .h1-top {
+        font-size: 30px;
+        margin: 30px;
+    }
+
+    .p-top {
+        font-size: 16px;
+        padding: 30px;
+    }
+
+    .texto {
+        font-size: 30px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+
+    .top-bar-top {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .top-img {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .top-img {
+        width: 90%;            
+        max-width: 600px;      
+        padding: 10px;         
+    }
+}
